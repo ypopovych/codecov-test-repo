@@ -25,7 +25,8 @@ jobs:
       - name: Report the range count this run produced
         run: python scripts/count_ranges.py
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         with:
           files: ./coverage.xml
-          fail_ci_if_error: false
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
