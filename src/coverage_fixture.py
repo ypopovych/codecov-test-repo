@@ -1,4 +1,64 @@
-"""Fixture: 60 independent uncovered single lines, each separated by covered lines."""
+"""Fixture: run 2 - composition of the first N ranges deliberately shifted."""
+
+
+def fresh_00(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_00"
+    return "fresh_negative_00"
+
+
+def fresh_01(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_01"
+    return "fresh_negative_01"
+
+
+def fresh_02(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_02"
+    return "fresh_negative_02"
+
+
+def fresh_03(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_03"
+    return "fresh_negative_03"
+
+
+def fresh_04(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_04"
+    return "fresh_negative_04"
+
+
+def fresh_05(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_05"
+    return "fresh_negative_05"
+
+
+def fresh_06(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_06"
+    return "fresh_negative_06"
+
+
+def fresh_07(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_07"
+    return "fresh_negative_07"
+
+
+def fresh_08(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_08"
+    return "fresh_negative_08"
+
+
+def fresh_09(value: int) -> str:
+    if value >= 0:
+        return "fresh_ok_09"
+    return "fresh_negative_09"
 
 
 def check_00(value: int) -> str:

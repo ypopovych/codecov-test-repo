@@ -2,6 +2,16 @@ import coverage_fixture as cf
 
 
 def test_all_positive_paths():
+    assert cf.fresh_00(1) == "fresh_ok_00"
+    assert cf.fresh_01(1) == "fresh_ok_01"
+    assert cf.fresh_02(1) == "fresh_ok_02"
+    assert cf.fresh_03(1) == "fresh_ok_03"
+    assert cf.fresh_04(1) == "fresh_ok_04"
+    assert cf.fresh_05(1) == "fresh_ok_05"
+    assert cf.fresh_06(1) == "fresh_ok_06"
+    assert cf.fresh_07(1) == "fresh_ok_07"
+    assert cf.fresh_08(1) == "fresh_ok_08"
+    assert cf.fresh_09(1) == "fresh_ok_09"
     assert cf.check_00(1) == "ok_00"
     assert cf.check_01(1) == "ok_01"
     assert cf.check_02(1) == "ok_02"
@@ -62,3 +72,16 @@ def test_all_positive_paths():
     assert cf.check_57(1) == "ok_57"
     assert cf.check_58(1) == "ok_58"
     assert cf.check_59(1) == "ok_59"
+
+
+def test_now_covering_the_ten_earliest_ranges():
+    assert cf.check_00(-1) == "negative_00"
+    assert cf.check_01(-1) == "negative_01"
+    assert cf.check_02(-1) == "negative_02"
+    assert cf.check_03(-1) == "negative_03"
+    assert cf.check_04(-1) == "negative_04"
+    assert cf.check_05(-1) == "negative_05"
+    assert cf.check_06(-1) == "negative_06"
+    assert cf.check_07(-1) == "negative_07"
+    assert cf.check_08(-1) == "negative_08"
+    assert cf.check_09(-1) == "negative_09"
