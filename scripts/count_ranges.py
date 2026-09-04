@@ -28,5 +28,6 @@ print(f"uncovered lines : {len(missing)}")
 print(f"distinct ranges : {len(ranges)}")
 print(f"ranges          : {', '.join(str(a) if a == b else f'{a}-{b}' for a, b in ranges)}")
 
-if len(ranges) < 55:
+# Only meaningful once the fixture is present; the baseline branch has none.
+if len(missing) >= 55 and len(ranges) < 55:
     sys.exit(f"ERROR: expected ~60 distinct ranges, got {len(ranges)} (they merged)")

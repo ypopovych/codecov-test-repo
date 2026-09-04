@@ -1,2 +1,5 @@
+import baseline
+
+
 def test_baseline():
-    assert True
+    assert baseline.baseline_ok()
