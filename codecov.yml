@@ -1,0 +1,18 @@
+# Annotations default to False as of Jan 30 2025 (worker checks/patch.py), so
+# they must be opted into explicitly. Annotations are also suppressed entirely
+# if flags/components are configured, or if the top-level patch status carries
+# paths/flags -- so this config deliberately keeps all of that empty.
+github_checks:
+  annotations: true
+
+coverage:
+  status:
+    patch:
+      default:
+        target: 100%
+    project:
+      default:
+        informational: true
+
+comment:
+  layout: "reach, diff, flags, files"
